@@ -29,4 +29,4 @@ COPY --from=build /app/target/payment-ms-*.jar /app/payment-ms.jar
 EXPOSE 8081
 
 # Command to run the application
-ENTRYPOINT ["java", "-jar", "/app/order-ms.jar"]
+ENTRYPOINT ["java", "-jar", "/app/payment-ms.jar"]
